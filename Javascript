@@ -1,0 +1,9 @@
+ // Você pode fazer mais validações aqui antes de enviar os dados para um servidor
+document.getElementById('user-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  const username = document.getElementById('username').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  alert(`Usuário cadastrado:\nNome de Usuário: ${username}\nEmail: ${email}`);
+});
